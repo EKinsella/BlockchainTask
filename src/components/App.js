@@ -10,7 +10,7 @@ import './App.css';
 
 class App extends Component {
 
-  /*constructor(props) {
+  constructor(props) {
     super(props)
     this.state = {
       web3: 'undefined',
@@ -19,7 +19,7 @@ class App extends Component {
       balance: 0,
       dBankAddress: null
     }
-  }*/
+  }
 
   async componentWillMount() {
     await this.loadBlockchainData(this.props.dispatch)
@@ -116,18 +116,6 @@ class App extends Component {
       } catch(err) {
         console.log('An error occurred', err)
       }
-    }
-  }
-
-  constructor(props) {
-    super(props)
-    this.state = {
-      web3: 'undefined',
-      account: '',
-      token: null,
-      dbank: null,
-      balance: 0,
-      dBankAddress: null
     }
   }
 
