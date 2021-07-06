@@ -10,17 +10,6 @@ import './App.css';
 
 class App extends Component {
 
-  constructor(props) {
-    super(props)
-    this.state = {
-      web3: 'undefined',
-      account: '',
-      dbank: null,
-      balance: 0,
-      dBankAddress: null
-    }
-  }
-
   async componentWillMount() {
     await this.loadBlockchainData(this.props.dispatch)
   }
@@ -118,7 +107,18 @@ class App extends Component {
       }
     }
   }
-
+  
+  constructor(props) {
+    super(props)
+    this.state = {
+      web3: 'undefined',
+      account: '',
+      dbank: null,
+      balance: 0,
+      dBankAddress: null
+    }
+  }
+  
   render() {
     return (
       <div className='text-monospace'>
