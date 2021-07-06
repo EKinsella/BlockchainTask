@@ -21,9 +21,9 @@ class App extends Component {
       await window.ethereum.enable(); //connect to Metamask
 
       //check if account is detected, then load balance&setStates, elsepush alert
-      if(typeof account[0] == 'undefined')
+      if(typeof accounts[0] == 'undefined')
       {
-        const balance = await web3.eth.getBalance(account[0])
+        const balance = await web3.eth.getBalance(accounts[0])
         this.setState({account: accounts[0], balance: balance, web3: web3})
       }
       else
