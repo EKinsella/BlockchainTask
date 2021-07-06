@@ -1,0 +1,6 @@
+{
+    "solidity.compileUsingRemoteVersion": "latest",
+    "debug.javascript.automaticallyTunnelRemoteServer": false,
+    "debug.javascript.usePreview": false,
+    "solidity.defaultCompiler": "remote"
+}
